@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top_Left_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="40sp"
+        android:paddingStart="7dp"
+        android:paddingLeft="7dp"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <ImageView
+        android:id="@+id/top_Left_heart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:paddingStart="1dp"
+        android:paddingLeft="1dp"
+        android:src="@drawable/ace_heart_24dp"/>
+
+    <ImageView
+        android:id="@+id/mid_heart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ace_heart_24dp"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/bot_right_heart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/ace_heart_24dp"
+        android:rotation="180"
+        android:layout_gravity="end|bottom"/>
+    <TextView
+        android:id="@+id/bot_right_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40sp"
+        android:rotation="180"
+        android:paddingStart="7dp"
+        android:paddingLeft="7dp"
+        android:layout_gravity="end|bottom"/>
+</FrameLayout>
