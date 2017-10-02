@@ -32,11 +32,11 @@
 
         <ImageView
             android:id="@+id/IV_mid_heart"
-            android:layout_marginTop="180dp"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/ace_heart_24dp"
-            android:scaleType="fitXY"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ace_heart_24dp" />
     </LinearLayout>
 
     <ImageView
