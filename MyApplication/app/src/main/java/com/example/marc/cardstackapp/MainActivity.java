@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
         {
             for (int j = 1; j < 5; ++j)
             {
-                this.cardStack.push(new Card(i,toCardSuit(j)));
+                this.cardStack.push(new Card(i, makeCardSuit(j)));
             }
         }
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public CardSuit toCardSuit(int n)
+    public CardSuit makeCardSuit(int n)
     {
         switch (n)
         {
