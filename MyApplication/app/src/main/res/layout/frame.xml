@@ -2,7 +2,8 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/top_Left_A"
@@ -21,22 +22,21 @@
         android:layout_marginTop="45dp"
         android:paddingStart="1dp"
         android:paddingLeft="1dp"
-        android:src="@drawable/ace_heart_24dp"/>
+        android:src="@drawable/hearts"/>
 
     <ImageView
         android:id="@+id/mid_heart"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:src="@drawable/ace_heart_24dp"
-        android:scaleType="fitXY"/>
+        android:src="@drawable/hearts"/>
 
     <ImageView
         android:id="@+id/bot_right_heart"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="45dp"
-        android:src="@drawable/ace_heart_24dp"
+        android:src="@drawable/hearts"
         android:rotation="180"
         android:layout_gravity="end|bottom"/>
     <TextView

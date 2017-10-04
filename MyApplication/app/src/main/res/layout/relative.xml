@@ -1,60 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/rl_screen"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:onClick="onScreenClick">
 
-    <TextView
-        android:id="@+id/top_A"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:id="@+id/upperCorner"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="7dp"
-        android:paddingLeft="7dp"
-        android:text="A"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="40sp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/TopNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/TopSuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TopNum"/>
+
+    </RelativeLayout>
 
     <ImageView
-        android:id="@+id/top_heart"
-        android:layout_below="@id/top_A"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:paddingStart="1dp"
-        android:paddingLeft="1dp"
-        android:src="@drawable/ace_heart_24dp"/>
-
-    <ImageView
-        android:id="@+id/middle_heart"
-        android:layout_centerInParent="true"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:paddingStart="1dp"
-        android:paddingLeft="1dp"
-        android:src="@drawable/ace_heart_24dp"
-        android:scaleType="fitXY"/>
-
-    <ImageView
-        android:id="@+id/bottom_right_heart"
-        android:layout_above="@+id/bot_A"
-        android:layout_alignParentRight="true"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:rotation="180"
-        android:paddingStart="1dp"
-        android:paddingLeft="1dp"
-        android:src="@drawable/ace_heart_24dp"
-        android:scaleType="fitXY"/>
-
-    <TextView
-        android:id="@+id/bot_A"
-        android:layout_width="match_parent"
+        android:id="@+id/middleSuit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A"
-        android:textSize="40sp"
-        android:textColor="@android:color/holo_red_light"
-        android:paddingStart="7dp"
-        android:paddingLeft="7dp"
-        android:rotation="180"
-        android:layout_alignParentBottom="true"/>
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/lowerCorner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middleSuit"
+        android:layout_toRightOf="@id/middleSuit"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp">
+
+        <ImageView
+            android:id="@+id/bottomSuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/bottomNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:rotation="180"
+            android:layout_below="@+id/bottomSuit"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
